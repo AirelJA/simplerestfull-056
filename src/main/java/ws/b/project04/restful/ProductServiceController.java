@@ -28,11 +28,15 @@ public class ProductServiceController {
         Product honey = new Product(); //membuat product variable honey
         honey.setId("1");
         honey.setName("Honey");
+        honey.setNumber(3);
+        honey.setPrice(10000);
         productRepo.put(honey.getId(), honey); //mengisi repo dengan product Honey
         
         Product almond = new Product(); //membuat product variable almond
         almond.setId("2");
         almond.setName("Almond");
+        almond.setNumber(2);
+        almond.setPrice(15000);
         productRepo.put(almond.getId(), almond); //mengisi repo dengan product Honey
     }
     @RequestMapping(value = "/products") //mengatur request mapping dan menentukan valuenya, disini kita menggunakan /product
